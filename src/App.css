@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+.todo-item.completed {
+  background-color: #d4edda; /* A light green color */
+  border-color: #c3e6cb;
+}
+
+.completed-icon {
+  color: green;
+  margin-left: 10px;
+  font-weight: bold;
+}

@@ -22,7 +22,7 @@ export default function Header(props) {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" to="/">
+              <Link className="nav-link active" aria-current="page" to="/login">
                 Home
               </Link>
             </li>
@@ -32,6 +32,12 @@ export default function Header(props) {
               </Link>
             </li>
           </ul>
+          <button
+            className="btn btn-sm btn-info mx-2"
+            onClick={props.undoDelete}
+          >
+            Undo Delete
+          </button>
           {props.searchBar ? (
             <form className="d-flex" role="search">
               <input
