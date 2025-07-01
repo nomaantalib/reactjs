@@ -69,7 +69,12 @@ function App() {
   return (
     <>
       <Header title="My To-Do App" searchBar={true} undoDelete={undoDelete} />
-      <div className="task-counter">Total Tasks: {todos.length}</div>
+      <div
+        className="task-counter"
+        style={{ color: "blue", fontWeight: "bold", margin: "50px" }}
+      >
+        Total Tasks: {todos.length}
+      </div>
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route
